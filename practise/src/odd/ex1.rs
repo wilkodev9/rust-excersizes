@@ -2,11 +2,17 @@
     with this exersice im i will check if a number is odd or even
 */
 
-pub fn ex(){
+pub fn ex1(){
     println!("enter a number and i will check if its odd or even");
     let inp = input();
     output(inp);
 }   
+
+pub fn test(x: &str)-> String{
+    let numb = x.to_string();
+    let filter = number_filter(numb);
+    return filter;
+}
 
 fn input() -> String {
     let mut numb = String::new();
