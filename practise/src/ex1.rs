@@ -2,8 +2,6 @@
     with this exersice im i will check if a number is odd or even
 */
 
-use std::num;
-
 pub fn ex(){
     println!("enter a number and i will check if its odd or even");
     let inp = input();
@@ -13,26 +11,38 @@ pub fn ex(){
 fn input() -> String {
     let mut numb = String::new();
     std::io::stdin().read_line(&mut numb);
-    return numb;
+    let filter = number_filter(numb);
+    let ans = odd_or_even(filter);
+    return ans;
 }
 
-fn output(inp: String) {
-    print!("you entered {}", inp)
+fn output(imp: String) {
+    print!("your number is {}", imp)
 }
 
-fn number_filter(mut number: String){
+fn number_filter(mut number: String) -> String{
     for i in no_space(number.trim().to_string()).chars(){
-        if i == - {
+        if i == '-' {
             number = number.replace("-","");
-            //resets the program
             let number = number_filter(number);
-            return number;
+            return number.to_string();
+        }
+        if i.is_numeric() == false {
+            println!("please only use numbers");
+            let new_input = input();
+            return new_input.to_string();
         }
     }
+    return number.to_string();
 }
 
-fn odd_or_even(){
-
+fn odd_or_even(x: String)-> String{
+    let blep: i32 = x.trim().parse().unwrap();
+    if blep % 2 == 0 {
+        return "even".to_string();
+    } else {
+        return "odd".to_string();
+    }
 }
 
 //this makes sure that i dont have any form of white space

@@ -1,3 +1,5 @@
+mod ex1;
+
 fn main() {
-    println!("hallo world")
+    ex1::ex();
 }
