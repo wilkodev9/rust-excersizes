@@ -1,1 +1,1 @@
-C:\Users\wilko\Documents\programming\rust-excersizes\practise\target\debug\practise.exe: C:\Users\wilko\Documents\programming\rust-excersizes\practise\src\ex1.rs C:\Users\wilko\Documents\programming\rust-excersizes\practise\src\main.rs
+C:\Users\wilko\Documents\programming\rust-excersizes\practise\target\debug\practise.exe: C:\Users\wilko\Documents\programming\rust-excersizes\practise\src\main.rs C:\Users\wilko\Documents\programming\rust-excersizes\practise\src\odd\ex1.rs C:\Users\wilko\Documents\programming\rust-excersizes\practise\src\odd\mod.rs

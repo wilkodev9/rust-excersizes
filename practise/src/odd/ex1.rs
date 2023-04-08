@@ -12,8 +12,7 @@ fn input() -> String {
     let mut numb = String::new();
     std::io::stdin().read_line(&mut numb);
     let filter = number_filter(numb);
-    let ans = odd_or_even(filter);
-    return ans;
+    return filter;
 }
 
 fn output(imp: String) {
@@ -33,7 +32,7 @@ fn number_filter(mut number: String) -> String{
             return new_input.to_string();
         }
     }
-    return number.to_string();
+    return odd_or_even(number.to_string());
 }
 
 fn odd_or_even(x: String)-> String{

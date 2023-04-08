@@ -1,5 +1,5 @@
-mod ex1;
-
+use crate::odd::ex1::ex;
+pub mod odd;
 fn main() {
-    ex1::ex();
+   ex()
 }
