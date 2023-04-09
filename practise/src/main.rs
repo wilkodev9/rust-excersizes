@@ -18,20 +18,6 @@ to-do:
    create a flow chart for all teh interactions
 */
 
-use crate::odd_or_even::odd_or_even::odd_or_even;
-use crate::sentence_lenght::sentence_lenght::sentence_lenght;
-use crate::word_splitting::word_splitting::word_splitting;
-pub mod word_splitting;
-pub mod odd_or_even;
-pub mod sentence_lenght;
-
 fn main() {
-   x = 
-}
-
-fn input() -> String {
-   let mut numb = String::new();
-   std::io::stdin().read_line(&mut numb);
-   // let filter = number_filter(numb);
-   return numb;
+   
 }
