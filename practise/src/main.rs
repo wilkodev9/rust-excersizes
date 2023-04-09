@@ -1,9 +1,11 @@
 /*
 
-test to add:
-   putting text and numbers in a differnt array
+test and files to add:
    word length checker
-   
+   percentage of sentence thats words and digits and amount
+   upper and lowercase case charcter amount + percentage
+   word counter
+   charcter counter
 */
 
 use crate::odd_or_even::odd_or_even::odd_or_even;
