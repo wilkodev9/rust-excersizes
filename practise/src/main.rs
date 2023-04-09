@@ -1,5 +1,18 @@
-use crate::odd::ex1::ex1;
-pub mod odd;
+/*
+
+test to add:
+   putting text and numbers in a differnt array
+   word length checker
+   
+*/
+
+use crate::odd_or_even::odd_or_even::odd_or_even;
+use crate::sentence_lenght::sentence_lenght::sentence_lenght;
+use crate::word_splitting::word_splitting::word_splitting;
+pub mod word_splitting;
+pub mod odd_or_even;
+pub mod sentence_lenght;
+
 fn main() {
-   ex1()
+   odd_or_even()
 }
