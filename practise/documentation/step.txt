@@ -1,0 +1,15 @@
+steps the code takes:
+takes a string as    
+--checks sentence lenght without white spaces
+----count how many numbers and letters there are
+----remove all numebrs and special charcters 
+------check if the charcter are upper or lower case
+--checks sentence lenght with white spaces
+--splits strings with whitespace in between into a list
+----counts all special charcters
+----checks removes all special charcters
+------order the strings from biggest to smallest
+------count how many charcter each word has
+--turn all non numbers into whitespace
+----split the numbers into a list 
+------ check if numbers are even or odd
